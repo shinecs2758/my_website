@@ -55,15 +55,15 @@ const Hero = () => {
               by curiosity and <br />a love for building things with
               React,Next.js and modern web technologies.
             </p>
-            <div className="flex gap-4">
+            <div className="flex flex-col gap-4 md:flex-row md:gap-4">
               <Button
                 text="See My Work"
-                className="md:w-80 md:h-16 w-60 h-12"
+                className="w-full max-w-xs md:w-80 md:h-16 h-12"
                 id="counter"
               />
               <Button
                 text="Download My CV"
-                className="md:w-80 md:h-16 w-60 h-12"
+                className="w-full max-w-xs md:w-80 md:h-16 h-12"
                 href="/Shine-C-S-Front End Developer (1).pdf"
                 download
               />
@@ -73,10 +73,11 @@ const Hero = () => {
 
         {/* RIGHT: 3D Model or Visual */}
         <figure>
-        <div className="hero-3d-layout">
+          <div className="hero-3d-layout">
             <img
               src={programer}
               alt="Programmer"
+              loading="lazy"
               className="w-full h-full object-contain"
             />
           </div>
