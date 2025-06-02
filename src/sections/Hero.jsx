@@ -55,15 +55,15 @@ const Hero = () => {
               by curiosity and <br />a love for building things with
               React,Next.js and modern web technologies.
             </p>
-            <div className="flex flex-col gap-4 md:flex-row md:gap-4">
+            <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-center">
               <Button
                 text="See My Work"
-                className="w-full max-w-xs md:w-80 md:h-16 h-12"
+                className="w-80 h-12 md:h-16"
                 id="counter"
               />
               <Button
                 text="Download My CV"
-                className="w-full max-w-xs md:w-80 md:h-16 h-12"
+                className="w-80 h-12 md:h-16"
                 href="/Shine-C-S-Front End Developer (1).pdf"
                 download
               />
@@ -77,7 +77,6 @@ const Hero = () => {
             <img
               src={programer}
               alt="Programmer"
-              loading="lazy"
               className="w-full h-full object-contain"
             />
           </div>
